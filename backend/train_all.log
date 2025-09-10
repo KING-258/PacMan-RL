@@ -1,0 +1,146 @@
+nohup: ignoring input
+Found 13 layouts. Starting training...
+[TRAIN] layout=capsuleClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -460.73
+	Average Rewards for last 100 episodes: -460.73
+	Episode took 1.87 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=capsuleClassic saved=/home/king/Projects/pacman-web/backend/models/approx-capsuleClassic-100ep.json
+[TRAIN] layout=contestClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -158.22
+	Average Rewards for last 100 episodes: -158.22
+	Episode took 4.30 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=contestClassic saved=/home/king/Projects/pacman-web/backend/models/approx-contestClassic-100ep.json
+[TRAIN] layout=mediumClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: 2.69
+	Average Rewards for last 100 episodes: 2.69
+	Episode took 5.51 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=mediumClassic saved=/home/king/Projects/pacman-web/backend/models/approx-mediumClassic-100ep.json
+[TRAIN] layout=mediumGrid episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: 200.71
+	Average Rewards for last 100 episodes: 200.71
+	Episode took 0.62 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=mediumGrid saved=/home/king/Projects/pacman-web/backend/models/approx-mediumGrid-100ep.json
+[TRAIN] layout=minimaxClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -327.03
+	Average Rewards for last 100 episodes: -327.03
+	Episode took 0.22 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=minimaxClassic saved=/home/king/Projects/pacman-web/backend/models/approx-minimaxClassic-100ep.json
+[TRAIN] layout=openClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -60.85
+	Average Rewards for last 100 episodes: -60.85
+	Episode took 4.38 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=openClassic saved=/home/king/Projects/pacman-web/backend/models/approx-openClassic-100ep.json
+[TRAIN] layout=originalClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: 101.61
+	Average Rewards for last 100 episodes: 101.61
+	Episode took 24.62 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=originalClassic saved=/home/king/Projects/pacman-web/backend/models/approx-originalClassic-100ep.json
+[TRAIN] layout=powerClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: 8.48
+	Average Rewards for last 100 episodes: 8.48
+	Episode took 5.54 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=powerClassic saved=/home/king/Projects/pacman-web/backend/models/approx-powerClassic-100ep.json
+[TRAIN] layout=smallClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -260.16
+	Average Rewards for last 100 episodes: -260.16
+	Episode took 2.47 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=smallClassic saved=/home/king/Projects/pacman-web/backend/models/approx-smallClassic-100ep.json
+[TRAIN] layout=smallGrid episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -456.02
+	Average Rewards for last 100 episodes: -456.02
+	Episode took 0.51 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=smallGrid saved=/home/king/Projects/pacman-web/backend/models/approx-smallGrid-100ep.json
+[TRAIN] layout=testClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: 188.99
+	Average Rewards for last 100 episodes: 188.99
+	Episode took 0.70 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=testClassic saved=/home/king/Projects/pacman-web/backend/models/approx-testClassic-100ep.json
+[TRAIN] layout=trappedClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -420.12
+	Average Rewards for last 100 episodes: -420.12
+	Episode took 0.16 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=trappedClassic saved=/home/king/Projects/pacman-web/backend/models/approx-trappedClassic-100ep.json
+[TRAIN] layout=trickyClassic episodes=100 ghost=DirectionalGhost numGhosts=4
+Beginning 100 episodes of Training
+Beginning 100 episodes of Training
+Reinforcement Learning Status:
+	Completed 100 out of 100 training episodes
+	Average Rewards over all training: -299.95
+	Average Rewards for last 100 episodes: -299.95
+	Episode took 3.63 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+[DONE] layout=trickyClassic saved=/home/king/Projects/pacman-web/backend/models/approx-trickyClassic-100ep.json
+ALL_TRAINING_COMPLETE wrote /home/king/Projects/pacman-web/backend/train_all.done

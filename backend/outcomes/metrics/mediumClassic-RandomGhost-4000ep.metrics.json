@@ -1,0 +1,29 @@
+{
+  "layout": "mediumClassic",
+  "ghost": "RandomGhost",
+  "episodes": 4000,
+  "eval_episodes": 200,
+  "modelPath": "/home/king/Projects/pacman-web/backend/models/approx-mediumClassic-RandomGhost-4000ep.json",
+  "training": {
+    "wins": 2236,
+    "losses": 1764,
+    "metrics": {
+      "mean_score": 766.987,
+      "std_score": 680.1507541207317,
+      "win_rate": 0.559,
+      "loss_rate": 0.441,
+      "alpha_conv": 0.5990999999999996
+    }
+  },
+  "evaluation": {
+    "wins": 175,
+    "losses": 25,
+    "metrics": {
+      "mean_score": 1183.96,
+      "std_score": 408.92949074382005,
+      "win_rate": 0.875,
+      "loss_rate": 0.125,
+      "policy_stability": 408.92949074382005
+    }
+  }
+}
