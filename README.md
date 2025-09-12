@@ -1,7 +1,5 @@
 # Pacman Web
 
-This project wraps your existing Berkeley Pacman RL code with a Flask REST API and a React (Vite) frontend.
-
 - Backend: `/home/king/Projects/pacman-web/backend`
 - Frontend: `/home/king/Projects/pacman-web/frontend`
 - Uses the repo at `/home/king/Pacman-ReinforcementLearning` directly (not modified).
