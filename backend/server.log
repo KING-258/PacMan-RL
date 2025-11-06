@@ -3,8 +3,8 @@ nohup: ignoring input
  * Debug mode: off
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://192.168.1.22:5001
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.22:5000
 [33mPress CTRL+C to quit[0m
 127.0.0.1 - - [07/Sep/2025 18:11:26] "GET /api/meta HTTP/1.1" 200 -
 127.0.0.1 - - [07/Sep/2025 18:22:46] "GET /api/meta HTTP/1.1" 200 -

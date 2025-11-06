@@ -106,7 +106,7 @@ def meta():
     })
 
 if __name__ == '__main__':
-    # FLASK_RUN_PORT or default 5001
-    port = int(os.environ.get('PORT', os.environ.get('FLASK_RUN_PORT', 5001)))
+    # FLASK_RUN_PORT or default 5000
+    port = int(os.environ.get('PORT', os.environ.get('FLASK_RUN_PORT', 5000)))
     app.run(host='0.0.0.0', port=port, debug=False)
 
