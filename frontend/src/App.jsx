@@ -4,14 +4,14 @@ import WelcomeScreen from './WelcomeScreen.jsx'
 import Game from './Game.jsx'
 
 export default function App() {
-  const [currentScreen, setCurrentScreen] = useState('loading') // 'loading', 'welcome', 'game'
+  const [currentScreen, setCurrentScreen] = useState('loading') 
   const [layouts, setLayouts] = useState([])
   const [meta, setMeta] = useState({ pacmanAgents: [], ghostAgents: [], extractors: [] })
   const [modelInfo, setModelInfo] = useState({ dir: '', models: [] })
   const [gameSettings, setGameSettings] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
 
-  // Load initial data
+  
   useEffect(() => {
     const loadInitialData = async () => {
       try {
@@ -27,7 +27,7 @@ export default function App() {
         setCurrentScreen('welcome')
       } catch (error) {
         console.error('Failed to load initial data:', error)
-        // Still show welcome screen even if some data fails to load
+        
         setCurrentScreen('welcome')
       } finally {
         setIsLoading(false)
@@ -82,7 +82,7 @@ export default function App() {
     )
   }
 
-  // Fallback
+  
   return (
     <div className="app-error">
       <div className="error-content">

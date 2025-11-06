@@ -7,7 +7,6 @@ const WelcomeScreen = ({ onStart, layouts, meta, modelInfo }) => {
   const [ghostAgent, setGhostAgent] = useState('DirectionalGhost')
   const [modelFile, setModelFile] = useState('')
 
-  // Auto-focus username input on mount
   useEffect(() => {
     const input = document.querySelector('.username-input')
     if (input) input.focus()

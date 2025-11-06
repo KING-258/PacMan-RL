@@ -12,7 +12,6 @@ function useAnimationLoop(enabled, tick, speed) {
     if (!enabled) return
     let raf
     let last = performance.now()
-    // Speed mapping: 1=200ms, 2=100ms, 3=50ms, 4=25ms, 5=10ms
     const speedMap = { 1: 200, 2: 100, 3: 50, 4: 25, 5: 10 }
     const interval = speedMap[speed] || 100
     
@@ -29,7 +28,7 @@ function useAnimationLoop(enabled, tick, speed) {
 }
 
 function drawPacman(ctx, x, y, r, dirRad) {
-  // dirRad: radians direction for mouth orientation
+  
   const mouth = Math.PI / 6
   ctx.fillStyle = PAC_COLOR
   ctx.beginPath()
@@ -41,11 +40,11 @@ function drawPacman(ctx, x, y, r, dirRad) {
 
 function drawGhost(ctx, x, y, r, color, scared=false) {
   ctx.fillStyle = scared ? '#2bbcdc' : color
-  // Body: semicircle + base frills
+  
   ctx.beginPath()
   ctx.arc(x, y - r * 0.2, r, Math.PI, 0)
   ctx.lineTo(x + r, y + r * 0.6)
-  // frills
+  
   const bumps = 4
   for (let i = bumps; i >= 0; i--) {
     const bx = x - r + (2 * r * i) / bumps
@@ -54,7 +53,7 @@ function drawGhost(ctx, x, y, r, color, scared=false) {
   }
   ctx.closePath()
   ctx.fill()
-  // Eyes
+  
   ctx.fillStyle = '#ffffff'
   const exOff = r * 0.35
   const eyOff = r * -0.2
@@ -72,7 +71,7 @@ function drawState(ctx, state, scale) {
   const h = state.height
   ctx.clearRect(0, 0, w * scale, h * scale)
 
-  // Draw walls
+  
   ctx.fillStyle = WALL_COLOR
   for (let x = 0; x < w; x++) {
     for (let y = 0; y < h; y++) {
@@ -82,7 +81,7 @@ function drawState(ctx, state, scale) {
     }
   }
 
-  // Draw food (small dots)
+  
   ctx.fillStyle = FOOD_COLOR
   for (let x = 0; x < w; x++) {
     for (let y = 0; y < h; y++) {
@@ -96,7 +95,7 @@ function drawState(ctx, state, scale) {
     }
   }
 
-  // Power pellets (bigger)
+  
   ctx.fillStyle = CAPSULE_COLOR
   state.capsules.forEach(([x, y]) => {
     const cx = x * scale + scale / 2
@@ -106,7 +105,7 @@ function drawState(ctx, state, scale) {
     ctx.fill()
   })
 
-  // Pac-Man
+  
   const [px, py] = state.pacman.pos
   const pcx = px * scale + scale / 2
   const pcy = (h - 1 - py) * scale + scale / 2
@@ -115,7 +114,7 @@ function drawState(ctx, state, scale) {
   const dirMap = { North: -Math.PI/2, South: Math.PI/2, East: 0, West: Math.PI, Stop: 0 }
   drawPacman(ctx, pcx, pcy, pr, dirMap[dir] ?? 0)
 
-  // Ghosts
+  
   state.ghosts.forEach((g, idx) => {
     const [gx, gy] = g.pos
     const gcx = gx * scale + scale / 2
@@ -130,7 +129,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
   const [state, setState] = useState(null)
   const [auto, setAuto] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
-  const [speed, setSpeed] = useState(2) // 1=Slow, 2=Normal, 3=Fast, 4=Very Fast
+  const [speed, setSpeed] = useState(2) 
   const canvasRef = useRef(null)
 
   const reset = async () => {
@@ -218,7 +217,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
 
   return (
     <div style={{ textAlign: 'center', color: '#fff', background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%)', minHeight: '100vh', fontFamily: '"Press Start 2P", monospace' }}>
-      {/* Header */}
+      {}
       <div style={{
         background: '#000',
         padding: '20px',
@@ -241,7 +240,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
         </div>
       </div>
 
-      {/* Score and Lives */}
+      {}
       <div style={{
         background: '#111',
         padding: '15px',
@@ -263,7 +262,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
         </div>
       </div>
 
-      {/* Game Canvas */}
+      {}
       <div style={{ 
         position: 'relative',
         display: 'inline-block',
@@ -278,7 +277,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
           style={{ display: 'block' }}
         />
         
-        {/* Game Over Overlay */}
+        {}
         {state && (state.isWin || state.isLose) && (
           <div style={{
             position: 'absolute',
@@ -306,7 +305,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
           </div>
         )}
 
-        {/* Pause Overlay */}
+        {}
         {auto && (
           <div style={{
             position: 'absolute',
@@ -323,7 +322,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
         )}
       </div>
 
-      {/* Control Buttons and Speed Controls */}
+      {}
       <div style={{
         background: '#111',
         padding: '20px',
@@ -334,7 +333,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
         width: '600px',
         margin: '0 auto'
       }}>
-        {/* Control Buttons - Left Side */}
+        {}
         <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
           <button onClick={reset} style={buttonStyle}>RESET</button>
           <button onClick={handleStep} disabled={!state || auto} style={{...buttonStyle, opacity: (!state || auto) ? 0.5 : 1}}>STEP</button>
@@ -344,7 +343,7 @@ const Game = ({ gameSettings, onBackToWelcome, modelInfo }) => {
           <button onClick={onBackToWelcome} style={buttonStyle}>MENU</button>
         </div>
 
-        {/* Speed Control - Right Side */}
+        {}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <span style={{ fontSize: '12px', color: '#FFD700', fontWeight: 'bold' }}>SPEED:</span>
           {[1, 2, 3, 4, 5].map(speedLevel => {
